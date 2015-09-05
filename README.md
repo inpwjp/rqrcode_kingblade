@@ -1,8 +1,6 @@
 # RqrcodeKingblade
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rqrcode_kingblade`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem can make qrcode file for kingbladeIII(infinity)
 
 ## Installation
 
@@ -22,7 +20,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+initialize class
+
+rqr_kb = RqrcoreKingblade::RqrcodeKingblade.new
+
+add title.
+
+```ruby
+rqr_kb.title = "title hoge"
+```
+
+add color data
+format is RGBdata plus brightness(v).
+
+```ruby
+rqr_kb.add_color(r = 0,g = 100 ,b = 150, brightness = 140, 0)
+```
+set filename which is maked png data.
+
+```ruby
+rqr_kb.filename = "filename.png"
+```
+
+make qrcode file.
+
+```ruby
+rqr_kb.to_qrcode
+```
 
 ## Development
 
