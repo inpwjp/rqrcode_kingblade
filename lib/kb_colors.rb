@@ -8,7 +8,7 @@ class KbColors
   def initialize(opts = {})
     @kb_colors = Array.new()
     @title = ""
-    @header = "C/opyright RUIFAN"
+    @header = "Copyright RU**AN"
     @max_length = 15
     if opts[:title]
       @title = opts[:title]
