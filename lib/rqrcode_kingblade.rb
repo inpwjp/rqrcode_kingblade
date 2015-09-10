@@ -24,6 +24,10 @@ module RqrcodeKingblade
       png = qr.to_img
       png.resize(360,360).save(@filename)
     end
+
+    def to_img
+      RQRCode::QRCode.new(@kb_colors.to_s, :size => 14 , :level => 'h').to_img
+    end
   end
       
   # Your code goes here...

@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = RqrcodeKingblade::VERSION
   spec.authors       = ["inpwjp"]
   spec.email         = ["inpw@mua.biglobe.ne.jp"]
+  spec.license       = "MIT"
 
   spec.summary       = %q{make qrcode for the kingblade III.}
   spec.description   = %q{make qrcode for the kingblade III.}
