@@ -8,6 +8,7 @@ module RqrcodeKingblade
     def initialize
       @kb_colors = KbColors.new
       @kb_colors.title = "test"
+      @kb_version = "KBX3"
       @filename = "test.png"
     end
 
@@ -26,7 +27,11 @@ module RqrcodeKingblade
     end
 
     def to_img
-      RQRCode::QRCode.new(@kb_colors.to_s, :size => 14 , :level => 'h').to_img
+      RQRCode::QRCode.new(@kb_colors.to_s, :size => 14 , :level => 'h').as_img
+    end
+
+    def to_svg
+      RQRCode::QRCode.new(@kb_colors.to_s, :size => 14 , :level => 'h').as_svg
     end
   end
       
