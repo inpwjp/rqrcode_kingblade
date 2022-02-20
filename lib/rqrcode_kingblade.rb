@@ -8,7 +8,7 @@ module RqrcodeKingblade
     def initialize
       @kb_colors = KbColors.new
       @kb_colors.title = "test"
-      @kb_version = "KBX3"
+      @kb_version = "KBX5"
       @filename = "test.png"
     end
 
